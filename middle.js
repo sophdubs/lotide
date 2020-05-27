@@ -16,3 +16,11 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`🍎  Assertion Failed: ${arr1} !== ${arr2}`);
   }
 }
+
+const isEven = function(num) {
+  return num % 2 === 0;
+}
+
+const middle = function(inputArr) {
+
+}
