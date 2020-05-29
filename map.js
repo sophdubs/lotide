@@ -41,3 +41,15 @@ const results2 = map(nums, num => num * 2);
 assertArraysEqual(results2, [2, 4, 6, 8, 10]);
 const results3 = map(nums, num => num.toString());
 assertArraysEqual(results3, ['1', '2', '3', '4', '5']);
+
+
+const input = [
+  { x: 3, y: 4 },
+  { x: 12, y: 5 },
+  { x: 8, y: 15 }
+];
+const result = input.map(obj => Math.sqrt(obj.x ** 2 + obj.y ** 2));
+
+console.log(result[0] === 5);
+console.log(result[1] === 13);
+console.log(result[2] === 17);
