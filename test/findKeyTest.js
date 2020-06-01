@@ -16,7 +16,7 @@ describe("#findKey", () => {
   it("returns the first key for which the callback returns a truthy value", () => {
     assert.strictEqual(findKey(stars, x => x === 2), 'noma');
   });
-  it("returns the undefined if there is no key for which the callback returns a truthy value", () => {
+  it("returns undefined if there is no key for which the callback returns a truthy value", () => {
     assert.strictEqual(findKey(stars, x => x === 4), undefined);
   });
 });
