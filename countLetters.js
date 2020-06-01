@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🍏  Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🍎  Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const removeSpaces = function(str) {
   return str.replace(/\s/g, '');
 }
@@ -25,15 +17,6 @@ const countLetters = function(str) {
   return outputObj;
 }
 
-const result = countLetters('abcdefgaaa');
-assertEqual(result["a"], 4);
-assertEqual(result["b"], 1);
-assertEqual(result["c"], 1);
-assertEqual(result["d"], 1);
-assertEqual(result["e"], 1);
-assertEqual(result["f"], 1);
-assertEqual(result["g"], 1);
-assertEqual(result["h"], undefined);
-
+module.exports = countLetters;
 
 
