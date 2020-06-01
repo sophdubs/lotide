@@ -1,7 +1,7 @@
 const eqArraysRecursive = require('../eqArraysRecursive');
 const assert = require('chai').assert;
 
-describe("eqArraysRecursive", () => {
+describe("#eqArraysRecursive", () => {
   it("returns true for equal input arrays", () => {
     assert.strictEqual(eqArraysRecursive([1, 2, 3], [1, 2, 3]), true);
   });
