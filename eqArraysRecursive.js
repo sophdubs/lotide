@@ -1,12 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🍏  Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🍎  Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const eqArrays = function(arr1, arr2) {
+const eqArraysRecursive = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -15,7 +7,7 @@ const eqArrays = function(arr1, arr2) {
       if (!Array.isArray(arr2[i])) {
         return false;
       } else {
-        if (!eqArrays(arr1[i], arr2[i])) {
+        if (!eqArraysRecursive(arr1[i], arr2[i])) {
           return false;
         }
       }
@@ -28,16 +20,4 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-
-
-
-// Simple Arrays
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 2, 3], [1, 2]), false);
-assertEqual(eqArrays([1, 2, 3], [1, 2, 4]), false);
-
-// Nested Arrays
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true);
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false);
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false);
-
+module.exports = eqArraysRecursive;
