@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const flatten= require('../flatten');
+const flatten = require('../flatten');
 
 describe("#flatten", () => {
   it("returns a flattened single-level array when passed in a nested array", () => {

@@ -1,6 +1,6 @@
 const removeSpaces = function(str) {
   return str.replace(/\s/g, '');
-}
+};
 
 const countLetters = function(str) {
   const noSpaces = removeSpaces(str);
@@ -15,7 +15,7 @@ const countLetters = function(str) {
   }
 
   return outputObj;
-}
+};
 
 module.exports = countLetters;
 

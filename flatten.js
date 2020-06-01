@@ -8,6 +8,6 @@ const flatten = function(arr) {
     }
   }
   return solutionArray;
-}
+};
 
 module.exports = flatten;

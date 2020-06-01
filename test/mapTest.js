@@ -18,7 +18,7 @@ describe("#map", () => {
       { x: 12, y: 5 },
       { x: 8, y: 15 }
     ];
-    const cb = obj => Math.sqrt(obj.x ** 2 + obj.y ** 2)
+    const cb = obj => Math.sqrt(obj.x ** 2 + obj.y ** 2);
     expect(map(input, cb)).to.deep.equal([5, 13, 17]);
   });
 });
