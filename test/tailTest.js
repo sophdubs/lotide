@@ -18,10 +18,6 @@
 // // Empty array should return empty array
 // assertEqual(tail([]).length, 0);
 // assertEqual(Array.isArray(tail([])), true);
-
-
-
-const assert = require('chai').assert;
 const expect = require('chai').expect;
 const tail   = require('../tail');
 
