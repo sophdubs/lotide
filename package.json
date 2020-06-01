@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@sophdubs/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the Lodash library.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/sophdubs/lotide.git"
   },
-  "author": "",
+  "author": "Sophie Dubois <sophiemargueritedubois@gmail.com> (https://github.com/sophdubs)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sophdubs/lotide/issues"
