@@ -1,24 +1,3 @@
-// Previously implemented
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) return false;
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) return false;
-  }
-
-  return true;
-}
-
-// Previously implemented
-const assertArraysEqual = function(arr1, arr2) {
-  let result = eqArrays(arr1, arr2);
-  if (result) {
-    console.log(`🍏  Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🍎  Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-}
-
 // Helper function to determine if num is even. Returns boolean. 
 const isEven = function(num) {
   return num % 2 === 0;
@@ -43,14 +22,6 @@ const middle = function(inputArr) {
     // Else, we return the value at middleIndex in a new array. 
     return [inputArr[middleIndex]];
   }
-
 }
 
-// Passing all tests
-assertArraysEqual(middle([]), []);
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); 
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); 
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); 
+module.exports = middle;
